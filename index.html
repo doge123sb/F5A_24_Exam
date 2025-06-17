@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Sam - Personal Profile</title>
+    <link rel="stylesheet" href=".\style.css">
+</head>
+	<script src="js/test.js"></script>
+    <script src="js/test2.js"></script>
+<body>
+    <!-- Lightbox/modal for enlarged images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="enlargedImg">
+    </div>
+
+    <!-- Updated Gallery Section with experience photos -->
+    <div class="gallery-container">
+        <div class="gallery">
+            <!-- Using photos from experiences section -->
+            <img src="https://i.postimg.cc/XJVbD00S/student-union.jpg" class="gallery-img active">
+            <img src="https://i.postimg.cc/L67m47jL/volley.jpg" class="gallery-img">
+            <img src="https://i.postimg.cc/ZKv1Hqyv/theatresport.jpg" class="gallery-img">
+            <img src="https://i.postimg.cc/8PqVgvVb/volleyball-match.jpg" class="gallery-img">
+            <img src="https://i.postimg.cc/BnmFYJFH/ts-gd-hk-mc.jpg" class="gallery-img">
+            
+            <div class="intro-text">
+                <h1>Hello, I'm Brian Sam.</h1>
+                <p>Nice to meet you here!</p>
+            </div>
+
+            <!-- Scroll Down Button -->
+            <div class="scroll-down" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                <button class="scroll-down-btn" aria-label="Scroll down">
+                    ↓
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rest of your content -->
+    <div class="sticky-header">
+        <h2>
+            <a href="#about">About</a> | 
+            <a href="#hobbies">Hobbies</a> | 
+            <a href="#skills">Skills</a> | 
+            <a href="#experience">Experience</a> | 
+            <a href="#academic">Achievements</a> | 
+            <a href="#contact">Contact</a>
+        </h2>
+    </div>
+
+    <div class="main-content">
+        <!-- About Section -->
+        <div class="section" id="about">
+            <div class="profile-container">
+                <img src="https://i.postimg.cc/xdpXRqLb/image.png" alt="Profile Image" class="profile-image">
+                <div class="profile-info">
+                    <h1>Brian Sam</h1>
+                    <span class="section-title">Education:</span>
+                    <p>St. Joseph Dispensary College (High School), Expected Graduation 2016</p>
+                    <span class="section-title">Contact:</span>
+                    <p>sambrian0912@gmail.com</p>
+                    <span class="section-title">Personal Statement:</span>
+                    <p>I am currently in Form 5, studying Business, being a member of the student union, and I actively participate in my school's volleyball team. I have been involved in various clubs and activities. My interests include playing volleyball and engaging in different sports. I consider myself outgoing and possess strong communication skills—my academic strengths lie in Economics and Math.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies Section with GIFs -->
+        <div class="section" id="hobbies">
+            <h2>Hobbies</h2>
+            <div class="hobbies">
+                <div class="hobby-block">
+                    <img src="https://media.baamboozle.com/uploads/images/611152/1644456754_97559_gif-url.gif" alt="Volleyball GIF" class="hobby-gif">
+                    <h3 class="hobby-title">Volleyball</h3>
+                </div>
+                <div class="hobby-block">
+                    <img src="https://i.gifer.com/8ZJk.gif" alt="Table Tennis GIF" class="hobby-gif">
+                    <h3 class="hobby-title">Table Tennis</h3>
+                </div>
+                <div class="hobby-block">
+                    <img src="https://cdn.dribbble.com/userupload/20816709/file/original-f8aa4ddf3b56743f8a75b5a8c2f6065e.gif" alt="Badminton GIF" class="hobby-gif">
+                    <h3 class="hobby-title">Badminton</h3>
+                </div>
+                <div class="hobby-block">
+                    <img src="https://media.tenor.com/I5JtQNmDwJ4AAAAM/mr-bean-bean.gif" alt="Acting GIF" class="hobby-gif">
+                    <h3 class="hobby-title">Acting</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section" id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-block">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Office Suite (Word/PowerPoint/Excel)</li>
+                        <li>Basic Video Editing (CapCut)</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h3>Language Proficiency</h3>
+                    <ul>
+                        <li>Cantonese, Mandarin (Fluent)</li>
+                        <li>English (Intermediate)</li>
+                        <li>Portuguese (Basic)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Updated Experience Section with Timeline -->
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Fencing Team 2022 -->
+                <div class="experience-item">
+                    <div class="experience-year">2022</div>
+                    <div class="experience-content">
+                        <h3>Fencing Team</h3>
+                        <p>Joined the school fencing team and participated in regional competitions.</p>
+                    </div>
+                </div>
+                
+                <!-- Student Union 2024 -->
+                <div class="experience-item">
+                    <div class="experience-year">2024</div>
+                    <div class="experience-content">
+                        <h3>Student Union</h3>
+                        <p>Elected as a member of the student union, organizing school events.</p>
+                    </div>
+                    <img src="https://i.postimg.cc/XJVbD00S/student-union.jpg" alt="Student Union" class="experience-photo clickable-img">
+                </div>
+                
+                <!-- Volleyball Team 2024 -->
+                <div class="experience-item">
+                    <div class="experience-year">2024</div>
+                    <div class="experience-content">
+                        <h3>Volleyball Team</h3>
+                        <p>Became a member of the school volleyball team.</p>
+                    </div>
+                    <img src="https://i.postimg.cc/L67m47jL/volley.jpg" alt="Volleyball Team" class="experience-photo clickable-img">
+                </div>
+                
+                <!-- Theatresport 2024 -->
+                <div class="experience-item">
+                    <div class="experience-year">2024</div>
+                    <div class="experience-content">
+                        <h3>Theatresport Competition</h3>
+                        <p>Participated in Theatresport various competitions.</p>
+                    </div>
+                    <img src="https://i.postimg.cc/ZKv1Hqyv/theatresport.jpg" alt="Theatresport" class="experience-photo clickable-img">
+                </div>
+                
+                <!-- Volleyball Competition 2025 -->
+                <div class="experience-item">
+                    <div class="experience-year">2025</div>
+                    <div class="experience-content">
+                        <h3>Volleyball Competition</h3>
+                        <p>Joined volleyball inter-class competition and got champion.</p>
+                    </div>
+                    <img src="https://i.postimg.cc/8PqVgvVb/volleyball-match.jpg" alt="Volleyball Competition" class="experience-photo clickable-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="section" id="academic">
+            <h2>Academic Awards and Achievements</h2>
+            <div class="certificates-container">
+                <div class="certificate-pair">
+                    <div class="certificate">
+                        <h3>MathConception 2022</h3>
+                        <p>Awarded for participating in the S2 Contest.</p>
+                        <img src="https://i.postimg.cc/mhxz9r0W/math.jpg" alt="MathConception Certificate" class="clickable-img">
+                    </div>
+                    <div class="certificate">
+                        <h3>ICBC Macau Youth Association</h3>
+                        <p>"Financial Knowledge on Campus" course, 2025</p>
+                        <img src="https://i.postimg.cc/xTKyRrg3/ICBC.jpg" alt="ICBC Certificate" class="clickable-img">
+                    </div>
+                </div>
+                <div class="certificate-pair">
+                    <div class="certificate">
+                        <h3>Theatresport 2024 Guangdong, Hong Kong and Macau Open - Third Place</h3>
+                        <img src="https://i.postimg.cc/BnmFYJFH/ts-gd-hk-mc.jpg" alt="Theatresport 2024 Award" class="clickable-img">
+                    </div>
+                    <div class="certificate">
+                        <h3>Theatresport 2024 Asian League - Third Place</h3>
+                        <img src="https://i.postimg.cc/MZ1Qk7RW/ts-asian.jpg" alt="Theatresport 2024 Award" class="clickable-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section" id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+85365520167">+853-6552-0167</a></p>
+                </div>
+                <div class="contact-box">
+                    <h3>Email</h3>
+                    <p><a href="mailto:sambrian0912@gmail.com">sambrian0912@gmail.com</a></p>
+                </div>
+                <div class="contact-box">
+                    <h3>Instagram</h3>
+                    <p><a href="https://www.instagram.com/doge.ch_/" target="_blank">doge.ch_</a></p>
+                </div>
+                <div class="contact-box">
+                    <h3>Facebook</h3>
+                    <p><a href="https://www.facebook.com/doge.sam.2025" target="_blank">doge.sam.2025</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>2025 Brian Sam, Personal Information Introduction Website</p>
+    </div>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
